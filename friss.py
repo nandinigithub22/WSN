@@ -17,13 +17,12 @@ p_r = P_t * G_t * G_r * (lambda_ / (4 * np.pi * d)) ** 2
 print("Received Power :" , p_r)
 
 # Define distance range
-#start: The starting value of the sequence.
-#stop: The end value of the sequence.
-#num: The number of samples to generate. The default is 50.
-distances = np.linspace(1, 10)  # Distances from 1m to 1000m
+distances = np.linspace(1, 10) 
 
 # Calculate received power using Friis transmission equation
 P_r = P_t * G_t * G_r * (lambda_ / (4 * np.pi * distances)) ** 2
+
+
 # Plot received power vs distance
 plt.figure(figsize=(10, 6))
 plt.plot(distances, P_r, label='Received Power $P_r$', color='brown')
