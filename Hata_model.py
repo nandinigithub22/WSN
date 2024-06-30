@@ -1,9 +1,9 @@
 import math
 
-f = 900 * 10**6  # Frequency in Hz
+f = 1000 * 10**6  # Frequency in Hz
 hte = 50  # Height of transmitting antenna in meters
 hre = 10  # Height of receiving antenna in meters
-d = 2000  # Distance in meters
+d = 200  # Distance in meters
 
 # Input size and city
 s = input("Enter the size (medium/large): ").strip().lower()
