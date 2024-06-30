@@ -1,10 +1,10 @@
 import numpy as np
 
 # Constants and parameters
-d = 50000
+d = 5000
 hte = 50 
 hre = 10
-eirp = 1000
+eirp = 100
 eirp_dB = 20 * np.log10(eirp)
 amu = 43
 garea = 9
