@@ -17,7 +17,7 @@ p_r = P_t * G_t * G_r * (lambda_ / (4 * np.pi * d)) ** 2
 print("Received Power :" , p_r)
 
 # Define distance range
-distances = np.linspace(1, 10)
+distances = np.linspace(1, 100)
 
 # Calculate received power using Friis transmission equation
 P_r = P_t * G_t * G_r * (lambda_ / (4 * np.pi * distances)) ** 2
@@ -25,10 +25,10 @@ P_r = P_t * G_t * G_r * (lambda_ / (4 * np.pi * distances)) ** 2
 
 # Plot received power vs distance
 plt.figure(figsize=(10, 6))
-plt.plot(distances, P_r, label='Received Power $P_r$', color='brown')
+plt.plot(distances, P_r, label='Received Power $P_r$', color='pink')
 plt.xlabel('Distance (m)')
 plt.ylabel('Received Power P_r(W)')
 plt.title('Received Power P_r vs Distance')
-plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+plt.grid(True, which='both', linestyle='--', linewidth=0.8)
 plt.legend()
 plt.show()
