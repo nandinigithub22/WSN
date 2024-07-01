@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 # Parameters
 pt = 50
 d = 10 * 10**3
-ht = 50
-hr = 1.5
+ht = int(input("Value of ht : " ) )
+hr = int(input("Value of hr : " ) )
 f = 900 * 10**6
 c = 3 * 10**8
 Eo = 10**-3
