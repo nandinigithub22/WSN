@@ -2,8 +2,8 @@ import numpy as np
 
 # Constants and parameters
 d = 5000
-hte = 50 
-hre = 10
+hte = int(input("Value of hte : " ) )
+hre = int(input("Value of hre : " ) )
 eirp = 100
 eirp_dB = 20 * np.log10(eirp)
 amu = 43
