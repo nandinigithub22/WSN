@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 l = 1/3
-d1 = 1000
-d2 = 1000
+d1 = int(input("Value of d1 : " ) )
+d2 = int(input("Value of d2 : " ) )
 h1 = 32
 
 print("case 1")
