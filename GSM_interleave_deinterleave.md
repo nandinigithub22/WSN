@@ -11,16 +11,18 @@ The interleaving process helps to ensure that errors, which often occur in burst
 
 # Steps of Interleaving:
 
-Input Data Blocks: The data to be transmitted is divided into smaller blocks. For instance, consider two input sequences:
+1. Input Data Blocks: The data to be transmitted is divided into smaller blocks. For instance, consider two input sequences:
 
-1. input1: [1, 2, 3, 4, 5, 6, 7, 8] , 
+ input1: [1, 2, 3, 4, 5, 6, 7, 8] , 
 
-2. input2: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+ input2: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
-Patterned Rearrangement: The bits are rearranged according to a specific pattern. In GSM, interleaving is often done by taking one bit from each block and then cycling through the bits cyclically. For example:
+2. Patterned Rearrangement: The bits are rearranged according to a specific pattern. In GSM, interleaving is often done by taking one bit from each block and then cycling through the bits cyclically. For example:
 
 The first bit from input1 is taken, followed by a bit from input2 shifted by a fixed amount.
-Resulting Interleaved Sequence: The resulting sequence might look something like this:
+
+
+3. Resulting Interleaved Sequence: The resulting sequence might look something like this:
 
 [1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd'],
 
@@ -39,16 +41,15 @@ By deinterleaving the received data, the original structure of the data is resto
 
 # Steps of Deinterleaving:
 
-Received Interleaved Data: The received data, which was transmitted in an interleaved order, needs to be deinterleaved. For instance:
+1. Received Interleaved Data: The received data, which was transmitted in an interleaved order, needs to be deinterleaved. For instance:
 
 Interleaved sequence: [1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd'] ,
 
 
-Check for Validity: Ensure the interleaved list length is even, as each original data bit should have a corresponding interleaved bit.
+2. Check for Validity: Ensure the interleaved list length is even, as each original data bit should have a corresponding interleaved bit.
 
 
-
-Rearrange to Original Order: The bits are rearranged back to their original order by reversing the interleaving pattern:
+3. Rearrange to Original Order: The bits are rearranged back to their original order by reversing the interleaving pattern:
 
 The first bit of the first block is taken, followed by the first bit of the second block, and so on.
 Resulting Deinterleaved Sequences: The resulting deinterleaved sequences should match the original input sequences:
