@@ -3,9 +3,7 @@ The knife-edge diffraction model is a classical method used in wireless communic
 Key Concepts
 Fresnel Zones: These are ellipsoidal regions around the line-of-sight path that define where diffraction and interference effects are significant. The first Fresnel zone is the most important for understanding diffraction.
 
-Fresnel-Kirchhoff Diffraction Parameter (
-𝑣
-v): This parameter is a measure of the diffraction loss and is defined as:
+Fresnel-Kirchhoff Diffraction Parameter (𝑣): This parameter is a measure of the diffraction loss and is defined as:
 
 ![image](https://github.com/nandinigithub22/WSN/assets/172033432/bc7d32e6-f574-4844-be29-3250c702b97d)
 
@@ -22,9 +20,9 @@ Determine the Geometry:
 Identify the distances 𝑑1 and 𝑑2.
 Measure the height ℎ of the obstacle relative to the line-of-sight path.
 Calculate the wavelength 
-![image](https://github.com/nandinigithub22/WSN/assets/172033432/9cd5a52a-3054-4302-97ed-b569949edc49)
 
-, where 
+
+![image](https://github.com/nandinigithub22/WSN/assets/172033432/9cd5a52a-3054-4302-97ed-b569949edc49) , where 
 𝑐 is the speed of light and 
 𝑓 is the frequency of the signal.
 Compute 𝑣:
