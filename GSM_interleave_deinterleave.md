@@ -37,17 +37,22 @@ Reordering: The bits are reordered according to the inverse of the interleaving 
 Output Data: The original data sequence is reconstructed.
 By deinterleaving the received data, the original structure of the data is restored, making it possible to apply error correction and retrieve the transmitted information accurately.
 
-Steps of Deinterleaving:
+# Steps of Deinterleaving:
 
 Received Interleaved Data: The received data, which was transmitted in an interleaved order, needs to be deinterleaved. For instance:
 
-Interleaved sequence: [1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd']
+Interleaved sequence: [1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd'] ,
+
+
 Check for Validity: Ensure the interleaved list length is even, as each original data bit should have a corresponding interleaved bit.
+
+
 
 Rearrange to Original Order: The bits are rearranged back to their original order by reversing the interleaving pattern:
 
 The first bit of the first block is taken, followed by the first bit of the second block, and so on.
 Resulting Deinterleaved Sequences: The resulting deinterleaved sequences should match the original input sequences:
 
-deinterleaved1: [1, 2, 3, 4, 5, 6, 7, 8]
+deinterleaved1: [1, 2, 3, 4, 5, 6, 7, 8],
+
 deinterleaved2: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
