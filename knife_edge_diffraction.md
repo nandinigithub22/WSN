@@ -7,194 +7,37 @@ Fresnel-Kirchhoff Diffraction Parameter (
 𝑣
 v): This parameter is a measure of the diffraction loss and is defined as:
 
-𝑣
-=
-ℎ
-2
-(
-𝑑
-1
-+
-𝑑
-2
-)
-𝜆
-𝑑
-1
-𝑑
-2
-v= 
-λ 
-d 
-1
-​
- d 
-2
-​
- 
-​
- 
-h 
-2(d 
-1
-​
- +d 
-2
-​
- )
-​
- 
-​
- 
-ℎ
+![image](https://github.com/nandinigithub22/WSN/assets/172033432/bc7d32e6-f574-4844-be29-3250c702b97d)
+
 h: Height of the obstacle above the line-of-sight path.
-𝑑
-1
-d 
-1
-​
- : Distance from the transmitter to the obstacle.
-𝑑
-2
-d 
-2
-​
- : Distance from the obstacle to the receiver.
-𝜆
-λ: Wavelength of the signal.
-Diffraction Loss: The signal loss due to diffraction can be estimated using the Fresnel-Kirchhoff diffraction parameter. The loss increases with higher values of 
-𝑣
-v.
+𝑑1 : Distance from the transmitter to the obstacle.
+𝑑2 : Distance from the obstacle to the receiver.
+𝜆 : Wavelength of the signal.
+Diffraction Loss: The signal loss due to diffraction can be estimated using the Fresnel-Kirchhoff diffraction parameter. The loss increases with higher values of 𝑣.
 
 Knife-Edge Diffraction Model
-Calculating Diffraction Parameter 
-𝑣
-v
+Calculating Diffraction Parameter 𝑣
 Determine the Geometry:
 
-Identify the distances 
-𝑑
-1
-d 
-1
-​
-  and 
-𝑑
-2
-d 
-2
-​
- .
-Measure the height 
-ℎ
-h of the obstacle relative to the line-of-sight path.
+Identify the distances 𝑑1 and 𝑑2.
+Measure the height ℎ of the obstacle relative to the line-of-sight path.
 Calculate the wavelength 
-𝜆
-=
-𝑐
-𝑓
-λ= 
-f
-c
-​
- , where 
-𝑐
-c is the speed of light and 
-𝑓
-f is the frequency of the signal.
-Compute 
-𝑣
-v:
+![image](https://github.com/nandinigithub22/WSN/assets/172033432/9cd5a52a-3054-4302-97ed-b569949edc49)
 
-𝑣
-=
-ℎ
-2
-(
-𝑑
-1
-+
-𝑑
-2
-)
-𝜆
-𝑑
-1
-𝑑
-2
-v= 
-λ 
-d 
-1
-​
- d 
-2
-​
- 
-​
- 
-h 
-2(d 
-1
-​
- +d 
-2
-​
- )
-​
- 
-​
- 
+, where 
+𝑐 is the speed of light and 
+𝑓 is the frequency of the signal.
+Compute 𝑣:
+
+![image](https://github.com/nandinigithub22/WSN/assets/172033432/b01bc973-a3f2-4f47-a15a-8c59d7f5233f)
+
 Calculating Diffraction Loss
 The diffraction loss can be estimated using the Fresnel diffraction parameter 
-𝑣
-v. The loss function 
-𝐹
-(
-𝑣
-)
 F(v) can be approximated from empirical data or using mathematical approximations such as:
 
 Approximate Loss Function:
 
-𝐿
-(
-𝑑
-𝐵
-)
-=
-6.9
-+
-20
-log
-⁡
-10
-(
-(
-𝑣
-−
-0.1
-)
-2
-+
-1
-+
-𝑣
-−
-0.1
-)
-L(dB)=6.9+20log 
-10
-​
- ( 
-(v−0.1) 
-2
- +1
-​
- +v−0.1)
-This formula provides a good approximation of the diffraction loss for 
-𝑣
-≥
-0
-v≥0.
+![image](https://github.com/nandinigithub22/WSN/assets/172033432/599490d0-19c5-4223-a9a7-e2db91f683bc)
+
+This formula provides a good approximation of the diffraction loss for 𝑣≥0.
 
