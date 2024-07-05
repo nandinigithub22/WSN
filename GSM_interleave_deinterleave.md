@@ -9,18 +9,21 @@ Transmission: The reordered data is then transmitted over the channel.
 The interleaving process helps to ensure that errors, which often occur in bursts, are spread out across multiple blocks of data rather than being concentrated in one block. This makes it easier for the error correction algorithms to detect and correct errors.
 
 
-Steps of Interleaving:
+# Steps of Interleaving:
 
 Input Data Blocks: The data to be transmitted is divided into smaller blocks. For instance, consider two input sequences:
 
-input1: [1, 2, 3, 4, 5, 6, 7, 8]
-input2: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+1. input1: [1, 2, 3, 4, 5, 6, 7, 8] , 
+
+2. input2: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
 Patterned Rearrangement: The bits are rearranged according to a specific pattern. In GSM, interleaving is often done by taking one bit from each block and then cycling through the bits cyclically. For example:
 
 The first bit from input1 is taken, followed by a bit from input2 shifted by a fixed amount.
 Resulting Interleaved Sequence: The resulting sequence might look something like this:
 
-[1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd']
+[1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd'],
+
 This rearrangement ensures that even if a burst error affects a part of the transmitted signal, the error will be distributed across multiple blocks when deinterleaved, making error correction more manageable.
 
 
