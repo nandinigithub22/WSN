@@ -27,7 +27,7 @@ def gsm_deinterleave(interleaved):
 
     return deinterleaved1, deinterleaved2
 
-# Example usage
+# Example 
 interleaved = [1, 'e', 2, 'f', 3, 'g', 4, 'h', 5, 'a', 6, 'b', 7, 'c', 8, 'd']
 deinterleaved1, deinterleaved2 = gsm_deinterleave(interleaved)
 print('Deinterleaved input1:')
