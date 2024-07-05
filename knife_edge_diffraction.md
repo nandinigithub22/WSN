@@ -1,3 +1,6 @@
+
+#  The knife-edge diffraction model
+
 The knife-edge diffraction model is a classical method used in wireless communication to estimate signal attenuation caused by an obstacle, such as a building or a hill, which obstructs the direct line-of-sight path between the transmitter and receiver. This model approximates the obstacle as a "knife-edge" to simplify the complex problem of diffraction.
 
 Key Concepts
