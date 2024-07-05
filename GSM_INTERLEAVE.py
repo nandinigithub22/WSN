@@ -6,7 +6,7 @@ def gsm_interleave(input1, input2):
     # Initialize the list to store interleaved elements
     interleaved = []
 
-    # Interleave the elements according to the specified pattern
+    # Interleave the elements 
     for i in range(len(input1)):
         interleaved.append(input1[i])
         interleaved.append(input2[(i + 3) % len(input2)])
