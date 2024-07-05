@@ -1,3 +1,5 @@
+# it is used when there is clear los between transmitter and receiver withing transmiting range
+
 import numpy as np
 import matplotlib.pyplot as plt
 
