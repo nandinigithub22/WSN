@@ -13,7 +13,7 @@ send data to a central base station (BS) for processing.
 
 What is Wireless Network ?
 A wireless network is a system that connects devices
-(such as computers, smartphones, printers, etc.) to each
+(such as computers, smartphones, printers, laptops etc.) to each
 other and to the internet without using physical cables.
 Wireless networks are convenient as they eliminate the
 need for physical cables, allowing devices to
