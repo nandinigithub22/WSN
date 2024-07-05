@@ -1,7 +1,7 @@
 def gsm_interleave(input1, input2):
     # Check if inputs have the same length
     if len(input1) != len(input2):
-        raise ValueError('Inputs must have the same length.')
+        raise ValueError('Both Inputs must have the same length.')
 
     # Initialize the list to store interleaved elements
     interleaved = []
