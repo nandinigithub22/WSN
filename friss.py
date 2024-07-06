@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Constants
-P_t = int(input("Enter value for P_t: "))
+P_t = int(input("Enter value for P_t : "))
 G_t = int(input("Enter value for G_t: "))
 G_r = int(input("Enter value for G_r: "))
 frequency = int(input("Enter value for f: "))
