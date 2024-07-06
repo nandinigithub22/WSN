@@ -30,7 +30,7 @@ Received Power Calculation
 The received power 
 𝑃𝑟 is given by:
 
-𝑃𝑟 = 𝑃𝑡𝐺𝑡𝐺𝑟(𝜆4𝜋𝑑\)2𝑑^4
+𝑃𝑟 = 𝑃𝑡𝐺𝑡𝐺𝑟ℎ𝑡ℎ𝑟/𝑑^4
 
 
   
