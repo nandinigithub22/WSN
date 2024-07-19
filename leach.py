@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Constants
 NUM_NODES = int(input("Enter no of nodes : "))
 AREA_SIZE = int(input("Size of Area (NxN) : "))
-cluster_head_probability = float(input(("Enter Probability of being a cluster head")) # Probability of being a cluster head
+cluster_head_probability = float(input(("Enter Probability of being a cluster head : ")) # Probability of being a cluster head
 
 # Initialize nodes
 def initialize_nodes(num_nodes, area_size):
